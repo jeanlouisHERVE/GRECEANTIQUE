@@ -1,0 +1,63 @@
+
+
+.main--container {
+
+    .jumbotron {
+        background-image: url("../img/epidaure.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+
+        @media (max-width: 768px) { 
+            .jumbotron {
+              height: 50vh;
+            }
+        }
+    }
+
+    .welcome--message {
+        margin-left:0px; 
+        margin-right:0px; 
+        background-color: white;
+
+        .welcome--presentation {
+            z-index: 6; 
+            height: auto; 
+
+            .welcome--presentation--text {
+                font-size: larger; 
+                font-family: 'Lexend', sans-serif;
+                color: black;
+              }
+              
+            .welcome--thank {
+            font-size: larger; 
+            font-family: 'Lexend', sans-serif;
+            }
+
+            .welcome--button {
+            margin-top: 50px;
+            color: black;
+            border: black solid 1px;
+            font-weight: 400;
+            font-family: 'Lexend', sans-serif;
+
+                &:hover {
+                    background-color: black;
+                    border: black solid 1px;
+                    font-family: 'Lexend', sans-serif;
+                    color: white;
+                    transition: all 0.3s ease-out;
+                }
+            }
+        }
+
+        .welcome--picture {
+            width: 100%;
+            background-image: url("../img/athens-3411147.jpg");
+            background-size: cover;
+            background-position: center;
+            height:50vh;
+        }
+    }
+}
