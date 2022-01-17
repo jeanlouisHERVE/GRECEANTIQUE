@@ -1,0 +1,41 @@
+
+.error404--container {
+    background-color: red ;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-image: url(../img/pecheur.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Lexend', sans-serif;
+    margin-top: -70px;
+
+    .error-404--content {
+        top: 65%;
+        right: 10%;
+        position: absolute;
+
+        h1 {
+            font-size: 40px;
+            font-weight: 800;
+            color: white;
+            margin-bottom: 16px;
+        }
+          
+        p {
+            font-size: 30px;
+            font-weight: 500;
+            color: white;
+        }
+        a {
+            font-size: 20px;
+            font-weight: 400;
+            text-decoration: none;
+            color: #00a9ff;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }   
+    }
+}
