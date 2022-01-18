@@ -1,0 +1,78 @@
+
+.articlesByCategory--main {
+    background-color: white;
+
+    .articlesByCategory--main--title {
+        margin-top: 0;
+        padding-top: 26px;
+        color: black;
+        font-family: 'Bebas Neue', sans-serif; 
+        font-size: 40px;
+        font-weight: 400;
+
+        @media (max-width: 600px) { 
+            .articlesByCategory--main--title {
+              font-size: 18px;
+              padding: 15px 15px 0 15px;
+            }
+        }
+
+        @media (max-width: 768px) { 
+            .articlesByCategory--main--title {
+              font-size: 40px;
+              padding: 15px 15px 0 15px;
+            }
+        }
+    }
+
+    .articlesByCategory--list {
+        display: flex;
+        flex-direction: column;
+
+        .articlesByCategory--table {
+
+            .articlesByCategory--tbody {
+
+                .articlesByCategory--unity {
+                    margin-left: auto;
+                    margin-right: auto;
+
+                    td {
+                        padding :0px;
+                        height: 30px;
+                      }
+                    
+                    @media (max-width: 500px) { 
+                        .articlesByCategory--column--category {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+
+                    @media (max-width: 500px) { 
+                        .articlesByCategory--categoryBadge {
+                          padding-top: 7px;
+                          margin-left: 5px;
+                          font-size: 8px;
+                        }
+                    }
+
+                    .list--article--a {
+                        h2 {
+                            font-family: 'Lexend', sans-serif; 
+                            font-size: large;
+                            margin-bottom: 0px;
+                          }
+                        
+                        @media (max-width: 500px) { 
+                            h2 {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

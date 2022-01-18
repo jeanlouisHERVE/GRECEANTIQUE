@@ -12,7 +12,7 @@ export default function CategoryList() {
                     <div className="category--list-container d-flex flex-column">
                         <?php foreach ($categories as $category) : ?>
                             <?php $categories ?>
-                            <a href="<?= $router->generate('articlesByCategory', ['id' => $category->getId()]) ?>" className=" btn d-flex col-10">
+                            <a href="<?= $router->generate('articlesByCategory', ['id' => $category->getId()]) ?>" className="btn d-flex col-10">
                                 <div className="category--list--unity d-flex flex-row justify-content-between align-items-center">
                                     <div className="category--list--h2">
                                         <h2 className="category--list--name"><?= $category->getName() ?></h2>
@@ -25,7 +25,7 @@ export default function CategoryList() {
                         <?php endforeach; ?>
                     </div>
                 </div>
-                <div className="vide p-0 col-md-1 col-lg-7"></div>
+                <div className="vide p-0 col-md-1 col-lg-7" />
             </div>
         </div>
     )
