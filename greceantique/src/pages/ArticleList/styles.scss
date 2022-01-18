@@ -1,0 +1,110 @@
+
+.list--article--main--container {
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+    margin-top: 70px;
+
+    .list--article--under--navbar--picture {
+        background: url('../img/sounion.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 500px;
+    }
+
+    .list--article--header {
+        margin-top: 22px;
+
+        .list--article--h1 {
+            text-decoration: none;
+            font-family: 'Bebas Neue', cursive;
+            font-size: large;
+            margin: 0px;
+
+            .list--article--h1 .text-left {
+                color: black;
+                font-weight: 400;
+                margin: 0;
+
+                @media (max-width: 600px) { 
+                    .text-left {
+                      font-size: 22px;
+                    }
+                }
+            }
+        }
+
+        .list--article--top--menu--right {
+            height: 100%;
+            display: flex;
+            justify-content: flex-end;
+
+            .filters--category {
+                
+                .filters__choice {
+                    @media (max-width: 600px) { 
+                        .filters__choice {
+                          font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .list--article--under--picture {
+        background-color: white;
+        margin-left: auto;
+        margin-right: auto;
+        height: 150vh;
+        max-height: 50vh;
+        overflow-y: scroll ;
+
+        .table {
+
+            .tbody {
+
+                .list--article--unity {
+                    margin-left: auto;
+                    margin-right: auto;
+                    overflow-y: hidden;
+
+                    td {
+                        padding :0px;
+                        height: 30px;
+
+                        .list--article--a {
+                            align-self: left;
+                            margin-left: 30px;
+                            color:black;
+                            width: 100%;
+                            margin: 0px;
+                            overflow-y: hidden;
+
+                            &:hover {
+                                text-decoration: none;
+                                margin: 0px; 
+                            }
+
+                            h2 {
+                                font-family: 'Lexend', sans-serif; 
+                                font-size: large;
+                                margin-bottom: 0px;
+
+                                @media (max-width: 500px) { 
+                                    h2 {
+                                      font-size: 15px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .list--article--column--date p {
+                        margin: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
