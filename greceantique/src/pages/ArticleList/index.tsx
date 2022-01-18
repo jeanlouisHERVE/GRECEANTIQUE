@@ -17,7 +17,7 @@ export default function ArticleList() {
             </div>
             <div className="list--article--under--picture d-flex justify-content-center col-sm-12 p-0 mt-3 col-lg-10">
                 <table className="table d-flex flex-column justify-content-center col-12 p-0">
-                    <tbody className="col-12 p-0">
+                    <tbody className="tbody col-12 p-0">
                         <?php foreach ($titleList as $title) : ?>
                             <tr className="list--article--unity d-flex justify-content-center col-12 p-0 flex-row">
                                 <td className="list--article--column--category d-none d-lg-flex justify-content-start col-1"> <span className="badge categoryBadge"><?= $title->getCategory()->getName() ?></span></td>

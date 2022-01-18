@@ -12,23 +12,27 @@ import Contact from '../../pages/Contact';
 import Error404 from '../../pages/Error404';
 import Home from '../../pages/Home';
 
+
 //import Components 
-import Header from '../Header';
+// import Header from '../Header';
+import Header2 from '../Header2';
 import Footer from '../Footer';
 
 function App() {
   return (
     <div className="App">
       <Router>
+        <Header2/>
         <Routes>
-          <Route path="/" element={<><Header/><Home/><Footer/></>}/>
-          <Route path="/contact" element={<><Header/><Contact/><Footer/></>}/>
-          <Route path="/apropos" element={<><Header/><Apropos/><Footer/></>}/>
-          <Route path="/error404" element={<><Header/><Error404/><Footer/></>}/>
-          <Route path="/articlelist" element={<><Header/><ArticleList/><Footer/></>}/>
-          <Route path="/articlesbycategory" element={<><Header/><ArticlesByCategory/><Footer/></>}/>
-          <Route path="/article/:id" element={<><Header/><ArticleDetails/><Footer/></>}/>
-          <Route path="/categorylist" element={<><Header/><CategoryList/><Footer/></>}/>
+          <Route path="/" element={<><Home/><Footer/></>}/>
+          <Route path="/contact" element={<><Contact/><Footer/></>}/>
+          <Route path="/apropos" element={<><Apropos/><Footer/></>}/>
+          <Route path="/error404" element={<><Error404/><Footer/></>}/>
+          <Route path="/articlelist" element={<><ArticleList/><Footer/></>}/>
+          <Route path="/articlesbycategory" element={<><ArticlesByCategory/><Footer/></>}/>
+          <Route path="/article/:id" element={<><ArticleDetails/><Footer/></>}/>
+          <Route path="/categorylist" element={<><CategoryList/><Footer/></>}/>
+          <Route path="*" element={<><Error404 /><Footer /></>} />
         </Routes>
       </Router>
     </div>
